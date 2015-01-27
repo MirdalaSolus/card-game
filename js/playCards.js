@@ -66,13 +66,14 @@ $(document).ready(function(){
         if(!hand.length){
             showError('your hand is empty');
             return;
+            var c = hand.pop();
         }
         $('#addCard2').click(function(){
         if(!computerHand.length){
             showError('your hand is empty');
             return;
         }
-        var c = hand.pop();
+        var c = computerHand.pop();
         showHand();
         cardDeck.addCard(c);
         cardDeck.spread();
