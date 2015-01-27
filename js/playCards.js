@@ -68,7 +68,7 @@ $(document).ready(function(){
             return;
         }
         $('#addCard2').click(function(){
-        if(!hand.length){
+        if(!computerHand.length){
             showError('your hand is empty');
             return;
         }
