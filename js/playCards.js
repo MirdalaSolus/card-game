@@ -20,7 +20,7 @@ $(document).ready(function(){
          el = $('#computerHand')
         el.html('');
         for(var i=0;i<computerHand.length;i++){
-            el.append(hand[i].getHTML());
+            el.append(computerHand[i].getHTML());
         }
     }
     var doShuffle = function(){
