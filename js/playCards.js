@@ -69,7 +69,8 @@ $(document).ready(function(){
             var c = hand.pop();
             showHands();
         }
-        $('#addCard2').click(function(){
+    }
+    $('#addCard2').click(function(){
         if(!computerHand.length){
             showError('your hand is empty');
             return;
