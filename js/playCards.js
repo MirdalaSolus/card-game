@@ -66,9 +66,11 @@ $(document).ready(function(){
         if(!hand.length){
             showError('your hand is empty');
             return;
-            var c = hand.pop();
-            showHands();
         }
+        var c = hand.pop();
+        showHands();
+        cardDeck.addCard(c);
+        cardDeck.spread();
     }
     $('#addCard2').click(function(){
         if(!computerHand.length){
