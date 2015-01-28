@@ -12,12 +12,12 @@ $(document).ready(function(){
         },3000);
     }
     var showHands = function(){
-        var el = $('#yourHand')
+        var el = $('#yourHand');
         el.html('');
         for(var i=0;i<hand.length;i++){
             el.append(hand[i].getHTML());
         }
-         el = $('#computerHand')
+         el = $('#computerHand');
         for(var i=0;i<computerHand.length;i++){
             el.append(computerHand[i].getHTML());
         }
@@ -36,7 +36,7 @@ $(document).ready(function(){
         cardDeck.spread();
         showHands();
     }
-      var doDrawCard2 = function(){
+    var doDrawCard2 = function(){
         var c = cardDeck.draw();
         if(!c){
             showError('no more cards');
