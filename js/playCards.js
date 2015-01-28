@@ -18,7 +18,6 @@ $(document).ready(function(){
             el.append(hand[i].getHTML());
         }
          el = $('#computerHand')
-        el.html('');
         for(var i=0;i<computerHand.length;i++){
             el.append(computerHand[i].getHTML());
         }
