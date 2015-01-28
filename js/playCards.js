@@ -43,7 +43,7 @@ $(document).ready(function(){
             showError('no more cards');
             return;
         }
-        computerHand[hand.length] = c;
+        computerHand[computerHand.length] = c;
         cardDeck.spread();
         showHands();
     }
@@ -60,7 +60,8 @@ $(document).ready(function(){
     $('#draw2').click(doDrawCard2);
     $('#shuffleDraw').click(function(){
         doShuffle();
-        doDrawCard();
+        doDrawCard1();
+        doDrawCard2();
     });
     $('#addCard1').click(function(){
         if(!hand.length){
