@@ -35,7 +35,7 @@ $(document).ready(function(){
         }
         hand[hand.length] = c;
         cardDeck.spread();
-        showHand();
+        showHands();
     }
       var doDrawCard2 = function(){
         var c = cardDeck.draw();
@@ -45,7 +45,7 @@ $(document).ready(function(){
         }
         computerHand[hand.length] = c;
         cardDeck.spread();
-        showHand();
+        showHands();
     }
     var doOrderByRank = function(){
         cardDeck.orderByRank();
@@ -67,6 +67,7 @@ $(document).ready(function(){
             showError('your hand is empty');
             return;
             var c = hand.pop();
+            showHands();
         }
         $('#addCard2').click(function(){
         if(!computerHand.length){
@@ -74,7 +75,7 @@ $(document).ready(function(){
             return;
         }
         var c = computerHand.pop();
-        showHand();
+        showHands();
         cardDeck.addCard(c);
         cardDeck.spread();
     });
